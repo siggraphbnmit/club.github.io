@@ -350,10 +350,7 @@ nav ul {
 }
 
 #members .img-area img {
-  width: 150%;
-  position: relative;
-  bottom: 10%;
-  right: 10%;
+  width: 100%;
 }
 
 #members .img-text {
