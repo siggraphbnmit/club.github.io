@@ -26,7 +26,7 @@ checkbox.addEventListener( 'click', function(){
 
 const wrapper = document.querySelector('.wrapper')
 
-window.setTimeout(preloaderFunction, 1000)
+window.setTimeout(preloaderFunction, 5000)
 
 function preloaderFunction() {
     wrapper.style.display = 'none';
@@ -51,3 +51,18 @@ var tl = new TimelineMax({
     })
   );
   
+  window.addEventListener('scroll', reveal)
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal')
+    
+    for(var i = 0; i < reveals.length; i++) {
+      
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint)
+        reveals[i].classList.add('active');
+    }
+  }
