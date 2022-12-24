@@ -66,3 +66,5 @@ var tl = new TimelineMax({
         reveals[i].classList.add('active');
     }
   }
+
+  history.scrollRestoration = 'manual';
