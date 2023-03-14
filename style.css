@@ -257,7 +257,7 @@ nav li {
 #home .home-text-container h1 {
     font-weight: bold;
     font-size: 3rem;
-    color: black;
+    color: #000000;
 }
 
 #home .home-text-container h3 {
@@ -268,7 +268,7 @@ nav li {
     text-transform: uppercase;
     width: 100%;
     line-height: 1.5em;
-    color: black;
+    color: #737373;
 }
 
 #home .home-text-container a {
